@@ -1,4 +1,6 @@
 
+import _ from 'lodash';
+
 document.addEventListener("DOMContentLoaded", () => {
     window.player = createCard();
     window.cpu = createCard();
@@ -24,11 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function createCard(i = 15) {
     let values = _.range(0, 90);
-    ranNums = [];
-    j = 0;
+    let ranNums = [];
+    let j = 0;
 
     while (ranNums.length < i) {
-        j = ~~(Math.random() * (values.length));
+         j = ~~(Math.random() * (values.length));
         if (ranNums.indexOf(values[j]) < 0) {
             ranNums.push(values[j])
         }
@@ -56,11 +58,14 @@ function bingo(player, cpu) {
     if (player.length == 0) {
         document.querySelector('.ball').remove();
         document.querySelector('.button').remove();
+        alert('Eres un mostro');
         return true;
+        
     }
     if (cpu.length == 0) {
         document.querySelector('.ball').remove();
         document.querySelector('.button').remove();
+        alert('Pa tu casa');
         return true;
     }
     else return false;
