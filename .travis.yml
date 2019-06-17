@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - node
+branches:
+  only:
+    - develop
+
+script:
+  - npm i
+  - npm run testTravis
+cache:
+  directories:
+    - node_modules
+
