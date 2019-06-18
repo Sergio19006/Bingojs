@@ -4,3 +4,5 @@ describe("Iniciamos los test", () => {
     expect("A").toEqual("A");
   });
 });
+
+var a = 0;
