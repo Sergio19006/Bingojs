@@ -6,9 +6,10 @@ branches:
   - deployDO
 env:
   global:
-  - REMOTE PATH=bingo
-  - REMOTE_USER=deploy
-  - REMOTE_HOST=157.230.123.70
+  - REMOTE PATH = bingo
+  - REMOTE_USER = deploy
+  - REMOTE_HOST = 157.230.123.70
+  
   before_install:
     - bash scripts/install.sh
 
