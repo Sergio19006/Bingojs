@@ -9,11 +9,11 @@ env:
   - REMOTE PATH = bingo
   - REMOTE_USER = deploy
   - REMOTE_HOST = 157.230.123.70
-  
-  before_install:
-    - bash scripts/install.sh
 
-  after_success:
-    - bash scripts/deploy.sh
+before_install:
+  - bash scripts/install.sh
+
+after_success:
+  - bash scripts/deploy.sh
 
 
