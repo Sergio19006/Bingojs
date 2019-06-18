@@ -1,22 +1,18 @@
 language: node_js
 node_js:
-  - node
+- node
 branches:
   only:
-    - deploy
-script:
-  - npm i
-  - npm run test
+  - deployDO
+env:
+  global:
+  - REMOTE PATH=bingo
+  - REMOTE_USER=deploy
+  - REMOTE_HOST=157.230.123.70
+  before_install:
+    - bash scripts/install.sh
 
-deploy:
-  local_dir: build
-  provider: pages
-  skip_cleanup: true
-  github_token: $githubToken
-  keep_history: true
-  on:
-    branch: deploy
-
-
+  after_success:
+    - bash scripts/deploy.sh
 
 
