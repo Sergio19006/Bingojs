@@ -10,7 +10,7 @@ script:
 
 deploy:
   local_dir: dist
-  provide: pages
+  provider: pages
   skip_cleanup: true
   github_token: $githubToken
   keep_history: true
