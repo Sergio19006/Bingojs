@@ -12,7 +12,7 @@ deploy:
   local_dir: dist
   provide: pages
   skip_cleanup: true
-  github_token: githubToken
+  github_token: $githubToken
   keep_history: true
   on:
     branch: deploy
