@@ -1,0 +1,62 @@
+
+.board{
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.button{
+    height: 35px;
+    width: 50px;  
+    margin: 5px; 
+}
+
+.ball{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    font-size: 50px;
+    border-radius: 10%;
+    margin: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.card{
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
+.number{
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 20%;
+    padding: 16px 8px;
+    margin: 5px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.marked{
+    text-decoration: line-through;
+    text-decoration-color: red;
+    color: red;
+}
+
+
+/*# sourceMappingURL=/css.967bad95.css.map */
