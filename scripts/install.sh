@@ -8,7 +8,7 @@ echo "REMOTE_PATH = ${REMOTE_PATH}"
 
 openssl aes-256-cbc -K $encrypted_83183f8e0998_key -iv $encrypted_83183f8e0998_iv -in deploy.enc -out deploy -d
 
-eval `$(ssh-agent -s)`
+eval "$(ssh-agent -s)"
 
 chmod 600 deploy
 
