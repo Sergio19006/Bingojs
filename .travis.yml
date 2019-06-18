@@ -9,7 +9,7 @@ scripts:
 - npm run test
 env:
   global:
-    - REMOTE_PATH=bingo
+    - REMOTE_PATH=/home/deploy/bingo
     - REMOTE_USER=deploy
     - REMOTE_HOST=157.230.123.70
 before_install:
