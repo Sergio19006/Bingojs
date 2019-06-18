@@ -3,5 +3,9 @@ node_js:
   - node
 branches:
   only:
-    - master
-travis setup heroku
+    - deploy
+script:
+  - npm i
+  - npm run test
+
+
