@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "dev": "parcel src/index.html --open",
-    "build": "parcel build src/index.html -d build --public-url / "
+    "build": " rm -rf build  && parcel build src/index.html -d build --public-url / "
   },
   "repository": {
     "type": "git",
