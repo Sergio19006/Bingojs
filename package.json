@@ -20,6 +20,6 @@
   "homepage": "https://github.com/Sergio19006/Bingojs#readme",
   "dependencies": {
     "lodash": "^4.17.11",
-    "lodash-es": "^4.17.11"
+    "lodash-es": "^4.17.21"
   }
 }
